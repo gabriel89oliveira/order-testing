@@ -142,6 +142,12 @@
                 })
                 .catch(exception => {
 
+                    this.$swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Não foi possivel registrar a ordem'
+                    })
+
                 })
 
             },
