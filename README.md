@@ -6,19 +6,18 @@ This project aims to simulate an order of articles where, based on a defined rul
 
 To install this project, clone the repository to your local machine
 
-> $ git clone https://github.com/gabriel89oliveira/order-testing.git
+    $ git clone https://github.com/gabriel89oliveira/order-testing.git
 
 <br>
 Run composer
 
-> $ composer install
+    $ composer install
 
 <br>
 Install dependecies
 
-> $ npm install
-
-> $ npm run dev
+    $ npm install
+    $ npm run dev
 
 <br>
 
@@ -26,22 +25,23 @@ Install dependecies
 Rename .env.example file to .env and update the following parameters
 
 ### **Database parameters**<br>
-DB_HOST=<br>
-DB_PORT=<br>
-DB_DATABASE=<br>
-DB_USERNAME=<br>
-DB_PASSWORD=<br>
+    DB_HOST=<br>
+    DB_PORT=<br>
+    DB_DATABASE=<br>
+    DB_USERNAME=<br>
+    DB_PASSWORD=<br>
 
 ### **Localhost parameters**<br>
-SANCTUM_STATEFUL_DOMAINS=<br>
-This is your localhost address, for exampe *localhost:8000*
+This is your localhost address, for exampe *localhost:8000*<br>
+
+    SANCTUM_STATEFUL_DOMAINS=
 
 <br>
 
 ## Run Migrations
 Run migration do start your database
 
-> $ php artisan run migration
+    $ php artisan run migration
 
 <br>
 
@@ -59,20 +59,20 @@ After you finish adding the articles, you just submit the order, and system will
 ## Unit Test
 In order to test the app, you can run the command:
 
-> $ php artisan test
+    $ php artisan test
 
 The app will run several unit tests for user, and also 2 additional tests, one for article and another one for order.
 <br><br>
 
 To test an article creation, you can access the file:
 
-> tests / Unit / ArticleTest
+    tests / Unit / ArticleTest
 
 In this file, you can test several input parameters to check verification rules and so on.
 <br><br>
 
 To test an order creation, you can access the file:
 
-> tests / Unit / OrderTest
+    tests / Unit / OrderTest
 
 In this file, you can test orders with several amount of articles.

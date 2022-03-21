@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Auth;
 use Carbon\Carbon;
 use App\Models\Order;
+use App\Traits\OrderTrait;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -40,45 +41,16 @@ class OrderController extends Controller
     {
         
         // Group order by item
-        $order_items = collect($request->items)->groupBy('id');
+        $order_items = OrderTrait::sort($request->items);
         
-        $list_of_items = collect();
-
-        foreach($order_items as $key => $item) {
-
-            $single_item = collect();
-
-            // Populate the sub collection
-            $single_item->put('id', $item[0]['id']);
-            $single_item->put('code', $item[0]['code']);
-            $single_item->put('name', $item[0]['name']);
-            $single_item->put('unit_price', $item[0]['unit_price']);
-            $single_item->put('unit_price_value', $item[0]['unit_price_value']);
-            $single_item->put('quantity', count($item));
-            $single_item->put('total_amount', $item[0]['unit_price_value'] * count($item));
-
-            // Populate final collection
-            $order_items->put($item[0]['id'], $single_item);
-
-        }
-
         // Total amount of order
         $total_amount_without_discount = $order_items->sum('total_amount');
 
-        // Rule for discount (5 < items < 9)
-        $discount = false;
-        foreach($order_items as $item){
-            if($item['quantity'] >= 5 And $item['quantity'] <= 9){
-                $discount = true;
-            }
-        }
+        // Rule for discount
+        $discount = OrderTrait::discount($order_items);
 
-        // Check if discount is valid
-        if($discount == true And $total_amount_without_discount >= 500){
-            $total_amount_with_discount = $total_amount_without_discount * 0.85;
-        }else{
-            $total_amount_with_discount = $total_amount_without_discount;
-        }
+        // Total amount with discount
+        $total_amount_with_discount = $total_amount_without_discount * $discount;
 
         // Create order
         $order = new Order;
