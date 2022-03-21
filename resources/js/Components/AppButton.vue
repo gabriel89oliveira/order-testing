@@ -3,7 +3,7 @@
     <button class="
         py-1 px-3 mx-2
         bg-purple-600 hover:opacity-80 
-        text-white font-semibold uppercase text-sm 
+        text-white font-semibold uppercase text-sm whitespace-nowrap
         rounded shadow 
     ">
         <slot />

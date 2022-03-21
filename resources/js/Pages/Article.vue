@@ -4,9 +4,12 @@
     
     <div class="flex flex-col rounded-xl bg-white w-full md:w-2/3 p-4 shadow">
 
-        <div class="flex flex-col items-center justify-around md:flex-row w-full text-lg font-bold border-b border-gray-300 text-center p-4">
+        <div class="flex flex-col items-center justify-around md:flex-row md:space-x-8 w-full text-lg font-bold border-b border-gray-300 text-center p-4">
             <div>
                 GERENCIAR ARTIGOS
+                <p class="font-normal text-sm">Nessa página você pode gerenciar sua lista de artigos, 
+                cadastrando novos artigos, editando os artigos já cadastrados 
+                ou até mesmo excluindo algum artigo da lista.</p>
             </div>
             <div>
                 <app-button>

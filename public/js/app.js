@@ -24071,7 +24071,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "py-1 px-3 mx-2 bg-purple-600 hover:opacity-80 text-white font-semibold uppercase text-sm rounded shadow"
+  "class": "py-1 px-3 mx-2 bg-purple-600 hover:opacity-80 text-white font-semibold uppercase text-sm whitespace-nowrap rounded shadow"
 };
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]);
@@ -24152,7 +24152,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "bg-gray-100 min-h-screen h-screen py-10 max-w-screen px-4 flex flex-col md:justify-center md:items-center"
+  "class": "bg-gray-100 min-h-screen py-10 max-w-screen px-4 flex flex-col md:justify-center md:items-center"
 };
 function render(_ctx, _cache) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default")]);
@@ -24740,7 +24740,7 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 
 var _hoisted_3 = ["href"];
 var _hoisted_4 = {
-  "class": "h-full overflow-y-auto max-h-full mt-6"
+  "class": "h-full md:overflow-y-auto md:max-h-full mt-6"
 };
 var _hoisted_5 = {
   key: 1
@@ -24884,7 +24884,7 @@ var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNod
 
 var _hoisted_9 = {
   key: 1,
-  "class": "h-full overflow-y-auto max-h-full mt-6"
+  "class": "h-full md:overflow-y-auto md:max-h-full mt-6"
 };
 var _hoisted_10 = {
   "class": "table w-full"
@@ -27243,10 +27243,12 @@ var _hoisted_1 = {
   "class": "flex flex-col rounded-xl bg-white w-full md:w-2/3 p-4 shadow"
 };
 var _hoisted_2 = {
-  "class": "flex flex-col items-center justify-around md:flex-row w-full text-lg font-bold border-b border-gray-300 text-center p-4"
+  "class": "flex flex-col items-center justify-around md:flex-row md:space-x-8 w-full text-lg font-bold border-b border-gray-300 text-center p-4"
 };
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, " GERENCIAR ARTIGOS ", -1
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" GERENCIAR ARTIGOS "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "font-normal text-sm"
+}, "Nessa página você pode gerenciar sua lista de artigos, cadastrando novos artigos, editando os artigos já cadastrados ou até mesmo excluindo algum artigo da lista.")], -1
 /* HOISTED */
 );
 
@@ -28291,7 +28293,9 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "w-full text-lg font-bold border-b border-gray-300 text-center p-4"
-}, " SIMULAR UMA ORDEM ", -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" SIMULAR UMA ORDEM "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "font-normal text-sm"
+}, " Nessa página você pode simular uma ordem, selecionando os itens da lista de artigos. Uma prévia do valor total é exibido, mostrando também o desconto quando aplicável.")], -1
 /* HOISTED */
 );
 
@@ -28311,7 +28315,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_app_layout = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-layout");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_app_layout, null, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_app_layout, {
+    "class": "md:h-screen"
+  }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_order_articles, {
         onAddArticle: _cache[0] || (_cache[0] = function ($event) {
@@ -29485,10 +29491,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "flex flex-col space-y-6 md:flex-row md:space-x-6 md:space-y-0"
+  "class": "flex flex-col justify-center space-y-6 md:flex-row md:space-y-0 md:divide-x divide-y md:divide-y-0"
 };
-var _hoisted_2 = ["href"];
+var _hoisted_2 = {
+  "class": "flex flex-col justify-end p-4 md:w-1/4"
+};
 var _hoisted_3 = ["href"];
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-4 text-right px-2"
+}, "Gerencie sua lista de artigos, criando novos itens, editando ou excluindo itens já cadastrados.", -1
+/* HOISTED */
+);
+
+var _hoisted_5 = {
+  "class": "flex flex-col justify-start p-4 md:w-1/4"
+};
+var _hoisted_6 = ["href"];
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "mt-4 text-left px-2"
+}, "Simule uma ordem com base nos artigos cadastrados e veja quanto de desconto você terá.", -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache) {
   var _component_app_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("app-button");
 
@@ -29496,7 +29522,7 @@ function render(_ctx, _cache) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_app_layout, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_app_button, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_app_button, {
         "class": "text-xl p-4"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -29504,12 +29530,12 @@ function render(_ctx, _cache) {
             href: _ctx.route('article')
           }, "Gerenciar Artigos", 8
           /* PROPS */
-          , _hoisted_2)];
+          , _hoisted_3)];
         }),
         _: 1
         /* STABLE */
 
-      }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_app_button, {
+      }), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_app_button, {
         "class": "text-xl p-4"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -29517,12 +29543,12 @@ function render(_ctx, _cache) {
             href: _ctx.route('order')
           }, "Simular Ordens", 8
           /* PROPS */
-          , _hoisted_3)];
+          , _hoisted_6)];
         }),
         _: 1
         /* STABLE */
 
-      })])];
+      }), _hoisted_7])])];
     }),
     _: 1
     /* STABLE */

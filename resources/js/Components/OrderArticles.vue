@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="h-full overflow-y-auto max-h-full mt-6">
+    <div class="h-full md:overflow-y-auto md:max-h-full mt-6">
 
         <app-loading v-if="loading" />
         <div v-else>

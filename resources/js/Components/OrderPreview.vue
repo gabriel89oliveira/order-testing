@@ -30,7 +30,7 @@
 
     </div>
 
-    <div v-if="articles.length > 0" class="h-full overflow-y-auto max-h-full mt-6">
+    <div v-if="articles.length > 0" class="h-full md:overflow-y-auto md:max-h-full mt-6">
         <div class="table w-full">
             <div class="table-header-group">
                 <div class="table-row py-2">
