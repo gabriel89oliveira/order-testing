@@ -25,11 +25,11 @@ Install dependecies
 Rename .env.example file to .env and update the following parameters
 
 ### **Database parameters**<br>
-    DB_HOST=<br>
-    DB_PORT=<br>
-    DB_DATABASE=<br>
-    DB_USERNAME=<br>
-    DB_PASSWORD=<br>
+    DB_HOST=
+    DB_PORT=
+    DB_DATABASE=
+    DB_USERNAME=
+    DB_PASSWORD=
 
 ### **Localhost parameters**<br>
 This is your localhost address, for exampe *localhost:8000*<br>
